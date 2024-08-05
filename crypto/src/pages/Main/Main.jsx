@@ -1,8 +1,10 @@
+import styles from "./styles.module.css";
+import Card from "../../components/Header/Card/Card";
+
 const Main = () =>{
     return(
-        <main>
-            <h3>Hello</h3>
-            <p>React</p>
+        <main className={styles.main}>
+            <Card/>
         </main>
     )
 }
