@@ -1,10 +1,11 @@
 import styles from "./styles.module.css";
 import Card from "../../components/Header/Card/Card";
 
-const Main = () =>{
+const Main = ({balance, setBalance} ) =>{
+    console.log(balance)
     return(
         <main className={styles.main}>
-            <Card/>
+            <Card balance = {balance} setBalance = {setBalance}/>
         </main>
     )
 }
