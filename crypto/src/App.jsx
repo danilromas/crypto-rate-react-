@@ -1,14 +1,14 @@
 import Header from "./components/Header/Header";
+import Main from "./pages/Main/Main";
 
 function App() {
 
   return (
-    <div>
+    <>
       <Header/>
-      <h3>Hello</h3>
-      <p>React</p>
-      </div>
+      <Main/>
+      </>
   )
 }
 
-export default App
+export default App;
