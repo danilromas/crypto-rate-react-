@@ -1,13 +1,15 @@
 import styles from "./styles.module.css";
 import Card from "../../components/Header/Card/Card";
 import CoinsList from "../../components/Header/CoinsList/CoinsList";
+import FilterBlock from "../../components/FilterBlock/FilterBlock";
 
-const Main = ({balance, setBalance, coins} ) =>{
+const Main = ({balance, setBalance, coins,Filteredcoins, setCoins} ) =>{
     console.log(balance)
     return(
         <main className={styles.main}>
             <Card balance = {balance} setBalance = {setBalance}/>
-            {coins.length > 0 ? <CoinsList coins={coins} /> : <div>Loading...</div>}
+            <FilterBlock setCoins = {setCoins} coins = {coins} />
+            {coins.length > 0 ? <CoinsList coins={Filteredcoins} /> : <div>Loading...</div>}
         </main>
     )
 }
