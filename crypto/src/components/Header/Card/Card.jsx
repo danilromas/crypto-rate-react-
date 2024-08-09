@@ -11,6 +11,7 @@ const Card = ({balance, setBalance, ruBalance}) => {
             <div className='card-block'>
             <p>Danya</p>
             <p>{balance}$</p>
+            <p>{ruBalance}.руб</p>
             </div>
         </div>
     );

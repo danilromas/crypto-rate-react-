@@ -24,4 +24,4 @@ const FilterBlock = ({coins, setCoins}) => {
     );
 };
 
-export default React.memo(FilterBlock);
+export default FilterBlock;
